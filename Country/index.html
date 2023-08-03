@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Country&Capitals</title>
+</head>
+
+<body>
+  <h1>Select a Country to See its Capital:</h1>
+
+  <div style="width: 400px; margin: auto;">
+    
+    <select id="countries" onchange="showCapital()" style="width: 300px;">
+      <option value="null">Select a Country</option>
+      <option value="bangladesh">Bangladesh</option>
+      <option value="india">India</option>
+      <option value="pakistan">Pakistan</option>
+      <option value="srilanka">Srilanka</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <h1 id="capital"></h1>
+
+  </div>
+
+  <script>
+    function showCapital() {
+      const select = document.getElementById("countries");
+      const selectedCountry = select.options[select.selectedIndex].text;
+      let capital = "";
+      switch (selectedCountry) {
+        case "Bangladesh":
+          capital = "Dhaka.";
+          break;
+        case "India":
+          capital = "Dilhi";
+          break;
+        case "Pakistan":
+          capital = "Islamabad";
+          break;
+        case "Srilanka":
+          capital = "Colombo";
+          break;
+        case "USA":
+          capital = "Washingtone";
+          break;
+        default:
+          capital = "";
+          break;
+      }
+      document.getElementById("capital").innerText = `Capital: ${capital}`;
+    }
+  </script>
+</body>
+
+</html>

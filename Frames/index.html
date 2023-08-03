@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Three-Column Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .left-column {
+      width: 20%;
+      background-color:rgb(239, 200, 128);
+      padding: 20px;
+    }
+
+    .center-column {
+      width: 60%;
+      background-color:rgb(243, 222, 185);
+      padding: 20px;
+    }
+
+    .right-column {
+      width: 20%;
+      background-color:rgb(239, 200, 128);
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-column">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#section1">Introduction</a></li>
+        <li><a href="#section2">Audio</a></li>
+        <li><a href="#section3">Video</a></li>
+      </ul>
+    </div>
+
+    <div class="center-column">
+
+      <h1 id="section1">Introduction</h1>
+      <P>
+        Hi! I am Kabir Ahammad Munna, a passionate and motivated junior web developer with expertise
+        in Programming Language,Educational Technology instruments,Data Analysis.I have a strong foundation in web development and a keen eye for design, striving to create visually appealing and user-friendly
+        websites and web applications.
+
+      <h1 id="section2">Audio</h1>
+      <audio controls>
+        <source src="Ft.mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h1 id="section3">Video</h1>
+      <iframe width="600" height="380" src="https://www.youtube.com/embed/ly36kn0ug4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="right-column">
+      <h2>Remarks</h2>
+      <p>Audio Contains a Educational tune.</p>
+      <p>Video is about embed a video on HTML,CSS.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
